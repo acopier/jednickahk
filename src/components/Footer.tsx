@@ -1,36 +1,28 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import pizzzza from '../../public/pizzzza.svg';
-async function Footer() {
+
+function Footer() {
   return (
-    <footer className='footer p-10'>
-      <aside className='flex container'>
-        <Image
-          src='/khk.png'
-          alt='Královéhradecký kraj'
-          width={512}
-          height={128}
-        />
-        <Image src='/hk.png' alt='Hradec Králové' width={200} height={200} />
-        <Image src={pizzzza} alt='Pizzzza' />
+    <footer className='footer items-center p-4 bg-neutral text-neutral-content'>
+      <aside className='items-center grid-flow-col'>
+        <p>© 2024 Jednička - všechna práva vyhrazena</p>
       </aside>
-      <nav>
-        <h6 className='footer-title'>Sítě</h6>
+      <nav className='grid-flow-col gap-4 md:place-self-center md:justify-self-end'>
+        {/* Instagram */}
         <Link
-          className='link link-hover'
-          href='https://www.facebook.com/jednickahk/?locale=cs_CZ'
-          target='_blank'
-          rel='noopener noreferrer'
-        >
-          Facebook
-        </Link>
-        <Link
-          className='link link-hover'
           href='https://www.instagram.com/1.oddil_jednicka/'
           target='_blank'
           rel='noopener noreferrer'
         >
-          Instagram
+          <Image src='/instagram.svg' alt='Instagram' width={24} height={24} />
+        </Link>
+        {/* Facebook */}
+        <Link
+          href='https://www.facebook.com/jednickahk/?locale=cs_CZ'
+          target='_blank'
+          rel='noopener noreferrer'
+        >
+          <Image src='/facebook.svg' alt='Facebook' width={24} height={24} />
         </Link>
       </nav>
     </footer>

@@ -1,7 +1,6 @@
-import Svg from '@/components/Svg';
 import Image from 'next/image';
 import Link from 'next/link';
-
+import pizzzza from '../../public/pizzzza.svg';
 async function Footer() {
   return (
     <footer className='footer p-10 text-base-content bg-neutral-500'>
@@ -14,7 +13,7 @@ async function Footer() {
         />
         <Image src='/hk.png' alt='Hradec Králové' width={200} height={200} />
         {/* Pizzzza logo */}
-        <Svg asset='pizzzza' />
+        <Image src={pizzzza} alt='Pizzzza' />
       </aside>
       <nav>
         <h6 className='footer-title'>Sítě</h6>

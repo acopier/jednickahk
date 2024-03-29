@@ -12,7 +12,7 @@ function Hero() {
           <h1 className='mb-5 text-5xl font-bold font-skaut'>
             1.Oddíl Junáka Hradec Králové
           </h1>
-          <p className='mb-5'></p>
+          {/* <p className='mb-5'></p> */}
         </div>
       </div>
     </div>

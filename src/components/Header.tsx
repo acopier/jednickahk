@@ -13,7 +13,7 @@ function Header() {
             alt='skaut'
             width={256}
             height={256}
-            src={`/logo-${darkMode === true ? 'light' : 'dark'}.png`}
+            src={`/skaut-${darkMode === true ? 'light' : 'dark'}.png`}
           />
         </Link>
         <span className='font-bold'>Web skautského oddílu Jednička HK</span>

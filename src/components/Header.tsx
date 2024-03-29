@@ -9,33 +9,26 @@ function Header() {
     (document.activeElement as HTMLElement)?.blur();
   };
   return (
-    <nav className='navbar shadow-md sticky font-skaut rounded-box'>
+    <nav className='navbar font-skaut sticky top-0 px-2'>
       <div className='navbar bg-base-300 rounded-box'>
-        <div className='flex-1 px-2 lg:flex-none'>
+        <div>
           <Link href='/' className='hover:opacity-75'>
             <Image
               alt='skaut'
-              width={128}
-              height={128}
+              width={192}
+              height={192}
               src={`/skaut-${darkMode === true ? 'light' : 'dark'}.png`}
             />
           </Link>
           Web skautského oddílu Jednička HK
         </div>
-        <div className='flex justify-end flex-1 px-2'>
-          <div className='flex items-center text-sm'>
-            <div className='dropdown dropdown-end'>
-              <div
-                tabIndex={0}
-                role='button'
-                className='btn btn-ghost rounded-btn'
-              >
+        <div className='flex justify-end flex-1'>
+          <div className='flex items-center'>
+            <div className='dropdown'>
+              <div tabIndex={0} role='button' className='btn btn-ghost'>
                 Oddíl
               </div>
-              <ul
-                tabIndex={0}
-                className='menu dropdown-content z-[1] p-2 shadow bg-base-100 rounded-box w-52 mt-4'
-              >
+              <ul tabIndex={0} className='menu dropdown-content'>
                 <li onClick={handleClick}>
                   <Link href='/druziny'>Družiny</Link>
                 </li>
@@ -56,25 +49,21 @@ function Header() {
                 </li>
               </ul>
             </div>
-            <div
-              tabIndex={0}
-              role='button'
-              className='btn btn-ghost rounded-btn'
-            >
-              <Link href='/odborky'>Odborky a vlčci</Link>
-            </div>
-            <div
-              tabIndex={0}
-              role='button'
-              className='btn btn-ghost rounded-btn'
-            >
-              <Link href='/kontakt'>Kontakt</Link>
-            </div>
-            <label className='swap swap-rotate'>
+            <ul>
+              <li className='btn btn-ghost rounded-btn'>
+                <Link href='/odborky'>Odborky a vlčci</Link>
+              </li>
+              <li className='btn btn-ghost rounded-btn'>
+                <Link href='/kontakt'>Kontakt</Link>
+              </li>
+            </ul>
+            <label className='swap swap-rotate btn'>
               <input
                 type='checkbox'
                 className='theme-controller'
                 value={darkMode === true ? 'light' : 'dark'}
+                title='theme-controller'
+                name='theme-controller'
               />
 
               <svg

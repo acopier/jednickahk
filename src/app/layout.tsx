@@ -6,7 +6,8 @@ import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
   title: '1. Oddíl Junáka Hradec Králové | Jednička',
-  applicationName: '',
+  description:
+    'Jsme skautský oddíl z Hradce Králové - Malšovic. V našem oddíle se schází kluci i holky z celého Hradce Králové a okolí.',
 };
 
 function RootLayout({

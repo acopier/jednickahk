@@ -1,13 +1,13 @@
 import Link from 'next/link';
-import ThemeImage from './ThemeImage';
-import HeaderDropdown from './HeaderDropdown';
+import ThemeImage from '../ThemeImage';
+import HeaderDropdown from './Dropdown';
 
 function Header() {
   return (
-    <nav className='navbar font-skaut sticky top-0 px-2'>
-      <div className='navbar bg-base-300 rounded-box'>
-        <div>
-          <Link href='/' className='hover:opacity-75 hidden md:flex'>
+    <nav className='navbar font-skaut sticky top-0 z-50 p-0'>
+      <div className='navbar bg-base-300'>
+        <div className='hover:opacity-75 hidden sm:flex'>
+          <Link href='/'>
             <ThemeImage alt='skaut' width={192} height={192} src='/skaut' />
           </Link>
           Jednička HK

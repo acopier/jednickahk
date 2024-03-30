@@ -25,24 +25,24 @@ function Hero() {
 
   return (
     <div className='hero min-h-screen' style={style} id='hero'>
-      <div className='hero-overlay bg-opacity-50'></div>
-      <div className='hero-content text-center text-gray-300'>
+      <div className='hero-overlay bg-opacity-50' />
+      <div className='hero-content text-center text-gray-300 flex flex-col lg:flex-row'>
         <div className='max-w-md'>
-          <h1 className='mb-5 text-5xl font-bold font-skaut'>
+          <h1 className='mb-5 text-4xl font-bold font-skaut bg-gray-500 rounded-box p-2 text-center'>
             1.Oddíl Junáka Hradec Králové
           </h1>
-          <br />
-          <p className='font-themix'>
+          <p className='font-themix bg-base-300 rounded-box px-3 p-3 font-bold text-lg'>
             Jsme skautský oddíl z Hradce Králové - Malšovic. V našem oddíle se
             schází kluci i holky z celého Hradce Králové a okolí. Naší činnost
             tvoří družinové schůzky, které se konají pravidelně každé úterý v
-            naší klubovně. Kromě pravidelných schůzek pořádáme řadu dalších
-            akcí.
+            naší klubovně. Také pořádáme řadu dalších akcí. Několikrát do roka
+            jezdíme na víkendové akce do širokého okolí. O jarních prázdninách
+            pořádáme zimní tábor a v létě jezdíme na čtrnáctidenní letní tábor
+            pod stany.
           </p>
         </div>
       </div>
     </div>
   );
 }
-
 export default Hero;

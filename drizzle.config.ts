@@ -1,8 +1,8 @@
 import type { Config } from 'drizzle-kit';
 
 export default {
-  schema: './drizzle/schema.ts',
-  out: './drizzle/migrations',
+  schema: './src/db/schema.ts',
+  out: './src/db/migrations',
   driver: 'turso',
   dbCredentials: {
     // silence typescript

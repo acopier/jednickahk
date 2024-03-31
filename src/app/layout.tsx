@@ -6,8 +6,7 @@ import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
   title: '1. Oddíl Junáka Hradec Králové | Jednička',
-  description:
-    'Jsme skautský oddíl z Hradce Králové - Malšovic. V našem oddíle se schází kluci i holky z celého Hradce Králové a okolí.',
+  description: 'Jsme skautský oddíl z Hradce Králové - Malšovic.',
 };
 
 function RootLayout({
@@ -16,10 +15,7 @@ function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang='cs'
-      className={`${theMix.variable} ${skautBold.variable} scroll-smooth`}
-    >
+    <html lang='cs' className={`${theMix.variable} ${skautBold.variable}`}>
       <body>
         <Header />
 

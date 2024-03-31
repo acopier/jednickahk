@@ -1,4 +1,5 @@
 import { getImageProps } from 'next/image';
+import Link from 'next/link';
 
 function getBackgroundImage(srcSet = '') {
   const imageSet = srcSet
@@ -28,9 +29,15 @@ function Hero() {
       <div className='hero-overlay bg-opacity-50' />
       <div className='hero-content text-center text-gray-300 flex flex-col lg:flex-row'>
         <div className='max-w-md'>
-          <h1 className='mb-5 text-4xl font-bold font-skaut bg-gray-500 rounded-box p-2 text-center'>
+          <h1 className='mb-5 text-4xl font-bold font-skaut bg-blue-500 rounded-box p-2 text-center'>
             1.Oddíl Junáka Hradec Králové
           </h1>
+          <p className='font-themix rounded-lg font-bold text-lg bg-yellow-700'>
+            Jsme skautský oddíl z Hradce Králové - Malšovic.
+          </p>
+          <button className='btn btn-ghost bg-yellow-400 text-black m-11'>
+            <Link href='#content'>Více Informací</Link>
+          </button>
         </div>
       </div>
     </div>

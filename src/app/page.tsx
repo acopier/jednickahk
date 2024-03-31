@@ -4,7 +4,7 @@ function Page() {
   return (
     <>
       <Hero />
-      <div className='card card-compact w-96 bg-base-100 float-left overflow-hidden mx-auto'>
+      <div className='card card-compact w-96 h-[31rem] bg-base-100 float-left overflow-hidden mx-auto'>
         <figure>
           <iframe
             src='https://frame.mapy.cz/s/fokuboruzo'

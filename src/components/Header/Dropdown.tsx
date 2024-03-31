@@ -9,6 +9,9 @@ function HeaderDropdown() {
   return (
     <>
       <li onClick={handleClick}>
+        <Link href='/historie'>O oddílu</Link>
+      </li>
+      <li onClick={handleClick}>
         <Link href='/druziny'>Družiny</Link>
       </li>
       <li onClick={handleClick}>

@@ -4,24 +4,21 @@ function Page() {
   return (
     <>
       <Hero />
-      <div className='card card-compact h-[31rem] w-max bg-base-100 table-cell items-center float-left overflow-hidden'>
+      <div className='card card-compact w-96 bg-base-100 float-left overflow-hidden mx-auto'>
         <figure>
           <iframe
             src='https://frame.mapy.cz/s/fokuboruzo'
-            width='710'
-            height='370'
+            width='700'
+            height='300'
             allowFullScreen={false}
             loading='lazy'
             referrerPolicy='no-referrer-when-downgrade'
             title='map'
-            className='rounded-box'
           />
         </figure>
         <div className='card-body'>
-          <h2 className='card-title font-bold flex justify-center'>
-            Naše klubovna
-          </h2>
-          <div className='divider m-0.5' />
+          <h2 className='card-title font-bold justify-center'>Naše klubovna</h2>
+          <div className='divider' />
           <h3 className='text-center font-semibold text-lg'>
             Junák - český skaut, středisko Karla Šimka Hradec Králové - oddíl
             Jednička
@@ -32,14 +29,14 @@ function Page() {
           </p>
         </div>
       </div>
-      <div className='float-right overflow-hidden'>
-        <div className='card card-compact w-96 bg-base-100 shadow-xl'>
+      <div className='float-right overflow-hidden mx-auto'>
+        <div className='card card-compact w-96 bg-base-100'>
           <figure>
             <Image
               src='/siggi.jpg'
               alt='Siggi'
               width={225}
-              height={225}
+              height={300}
               className='rounded-box'
             />
           </figure>
@@ -52,14 +49,14 @@ function Page() {
           </div>
         </div>
       </div>
-      <div className='float-right overflow-hidden pr-3'>
-        <div className='card card-compact w-96 bg-base-100 shadow-xl'>
+      <div className='float-right overflow-hidden mx-auto'>
+        <div className='card card-compact w-96 bg-base-100'>
           <figure>
             <Image
               src='/svaca.jpg'
               alt='Sváča'
               width={225}
-              height={225}
+              height={300}
               className='rounded-box'
             />
           </figure>
@@ -74,14 +71,14 @@ function Page() {
           </div>
         </div>
       </div>
-      <div className='float-right overflow-hidden pr-3'>
-        <div className='card card-compact w-96 bg-base-100 shadow-xl'>
+      <div className='float-right overflow-hidden mx-auto'>
+        <div className='card card-compact w-96 bg-base-100'>
           <figure>
             <Image
               src='/pepek.jpg'
               alt='Pepek'
               width={225}
-              height={225}
+              height={300}
               className='rounded-box'
             />
           </figure>

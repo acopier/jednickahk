@@ -5,7 +5,7 @@ function Page() {
         Historie oddílu
       </h1>
       <div className='divider' />
-      <div className='bg-gray-700 rounded-box font-themix mx-5 px-5 p-5 text-2xl m-5 flex flex-col gap-y-6'>
+      <div className='rounded-box font-themix mx-5 px-5 p-5 text-2xl m-5 flex flex-col gap-y-6'>
         <p>
           Historie 1.oddílu se začala psát podle posledních zpráv již v roce
           1968 ve skautském středisku v Kuklenách. Prvním z vůdců oddílu byl

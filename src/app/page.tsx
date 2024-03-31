@@ -8,7 +8,7 @@ function Page() {
         <div className='float-left overflow-hidden mx-1 m-1'>
           <div className='card card-compact bg-base-100 mx-1'>
             <div className='card-body'>
-              <p className='font-themix rounded-box font-bold text-lg bg-base-200 lg:w-[29rem] w-[22rem]'>
+              <p className='font-themix rounded-box font-bold text-lg bg-base-300 lg:w-[29rem] w-[22rem] px-3 p-3'>
                 V našem oddíle se schází kluci i holky z celého Hradce Králové a
                 okolí. Naší činnost tvoří družinové schůzky, které se konají
                 pravidelně každé úterý v naší klubovně. Také pořádáme řadu
@@ -25,10 +25,10 @@ function Page() {
             </div>
           </div>
         </div>
-        <div className='card card-compact bg-base-100 float-left overflow-hidden mx-1 m-1'>
+        <div className='card card-compact bg-base-300 float-left overflow-hidden mx-1 m-1'>
           <figure>
             <iframe
-              src='https://frame.mapy.cz/s/fokuboruzo'
+              src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2554.1122951742045!2d15.855153077165346!3d50.19643187154469!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470dd4c03f6e4d25%3A0x78f9618d77f9a59b!2zxIxhamtvdnNrw6lobyAxODYxLzQ2YSwgNTAwIDA5IE5vdsO9IEhyYWRlYyBLcsOhbG92w6k!5e0!3m2!1scs!2scz!4v1711873400023!5m2!1scs!2scz'
               height='300'
               allowFullScreen={false}
               loading='lazy'
@@ -53,7 +53,7 @@ function Page() {
           </div>
         </div>
         <div className='float-right overflow-hidden mx-1 m-1 items-center'>
-          <div className='card card-compact lg:w-56 w-96 h-[32.7rem] bg-base-100'>
+          <div className='card card-compact lg:w-56 w-96 h-[32.7rem] bg-base-300'>
             <figure>
               <Image
                 src='/siggi.jpg'
@@ -73,7 +73,7 @@ function Page() {
           </div>
         </div>
         <div className='float-right overflow-hidden mx-1 m-1'>
-          <div className='card card-compact lg:w-56 w-96 bg-base-100'>
+          <div className='card card-compact lg:w-56 w-96 bg-base-300'>
             <figure>
               <Image
                 src='/svaca.jpg'
@@ -95,7 +95,7 @@ function Page() {
           </div>
         </div>
         <div className='float-right overflow-hidden mx-1 m-1'>
-          <div className='card card-compact lg:w-56 w-96 bg-base-100'>
+          <div className='card card-compact lg:w-56 w-96 bg-base-300'>
             <figure>
               <Image
                 src='/pepek.jpg'

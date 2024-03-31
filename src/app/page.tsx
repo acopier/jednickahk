@@ -4,7 +4,7 @@ function Page() {
   return (
     <>
       <Hero />
-      <div className='card card-compact w-96 h-[31rem] bg-base-100 float-left overflow-hidden mx-auto'>
+      <div className='card card-compact w-96 h-[31rem] bg-base-100 float-left overflow-hidden mx-1'>
         <figure>
           <iframe
             src='https://frame.mapy.cz/s/fokuboruzo'
@@ -29,7 +29,7 @@ function Page() {
           </p>
         </div>
       </div>
-      <div className='float-right overflow-hidden mx-auto'>
+      <div className='float-right overflow-hidden mx-1'>
         <div className='card card-compact w-96 bg-base-100'>
           <figure>
             <Image
@@ -49,7 +49,7 @@ function Page() {
           </div>
         </div>
       </div>
-      <div className='float-right overflow-hidden mx-auto'>
+      <div className='float-right overflow-hidden mx-1'>
         <div className='card card-compact w-96 bg-base-100'>
           <figure>
             <Image
@@ -71,7 +71,7 @@ function Page() {
           </div>
         </div>
       </div>
-      <div className='float-right overflow-hidden mx-auto'>
+      <div className='float-right overflow-hidden mx-1'>
         <div className='card card-compact w-96 bg-base-100'>
           <figure>
             <Image

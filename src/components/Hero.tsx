@@ -31,7 +31,7 @@ function Hero() {
           <h1 className='mb-5 text-4xl font-bold font-skaut bg-gray-500 rounded-box p-2 text-center'>
             1.Oddíl Junáka Hradec Králové
           </h1>
-          <p className='font-themix bg-base-300 rounded-box px-3 p-3 font-bold text-lg'>
+          <p className='font-themix rounded-box px-3 p-3 font-bold text-lg bg-base-200'>
             Jsme skautský oddíl z Hradce Králové - Malšovic. V našem oddíle se
             schází kluci i holky z celého Hradce Králové a okolí. Naší činnost
             tvoří družinové schůzky, které se konají pravidelně každé úterý v

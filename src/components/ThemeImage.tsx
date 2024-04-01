@@ -1,6 +1,6 @@
 import { getImageProps } from 'next/image';
 
-export default function ThemeImage(props: {
+function ThemeImage(props: {
   src: string;
   alt: string;
   width: number;
@@ -18,7 +18,9 @@ export default function ThemeImage(props: {
     <picture>
       <source media='(prefers-color-scheme: dark)' srcSet={dark} />
       <source media='(prefers-color-scheme: light)' srcSet={light} />
-      <img {...rest} />
+      <img {...rest} alt={props.alt} />
     </picture>
   );
 }
+
+export default ThemeImage;

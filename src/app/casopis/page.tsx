@@ -1,26 +1,7 @@
 import ContentPage from '@/components/ContentPage';
-import Link from 'next/link';
+import Magazine from '@/components/Magazine';
 
 function Page() {
-  function Magazine(props: {
-    year: number;
-    month: string;
-    uploadTime: string;
-    oldFormat?: boolean;
-  }) {
-    return (
-      <Link
-        className='btn btn-outline mx-1 m-5'
-        href={`https://jednickahk.skauting.cz/wp-content/uploads/${props.year}/${props.uploadTime}/${props.month}.pdf`}
-      >
-        {
-          (props.month[0].toUpperCase() + props.month.slice(1)) as Capitalize<
-            typeof props.month
-          >
-        }
-      </Link>
-    );
-  }
   return (
     <ContentPage title='Jednička Hlásí'>
       Ušel vám, nebo jste někde zašantročili váš časopis Jednička hlásí, ve

@@ -1,6 +1,6 @@
 import Link from 'next/link';
-import ThemeImage from '../ThemeImage';
 import HeaderDropdown from './Dropdown';
+import ThemeImage from '../ThemeImage';
 
 function Header() {
   return (

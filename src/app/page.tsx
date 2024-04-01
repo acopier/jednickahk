@@ -1,15 +1,33 @@
 import Hero from '@/components/Hero';
 import Image from 'next/image';
 function Page() {
-  function LeaderImage(props: { person: string; alt: string }) {
+  function Leader(props: {
+    person: string;
+    role: string;
+    phoneNumber: string;
+    email: string;
+  }) {
     return (
-      <Image
-        src={`/vedouci/${props.person}.jpg`}
-        alt={props.alt}
-        width={225}
-        height={300}
-        className='rounded-box'
-      />
+      <div className='float-right overflow-hidden mx-1 m-1 items-center'>
+        <div className='card card-compact lg:w-56 w-96 h-[32.7rem] bg-base-300'>
+          <figure>
+            <Image
+              src={`/vedouci/${props.person.normalize('NFKD').replace(/[^\w]/g, '')}.jpg`}
+              width={225}
+              height={300}
+              className='rounded-box'
+              alt={props.person}
+            />
+          </figure>
+          <div className='card-body text-center'>
+            <h2 className='card-title justify-center'>{props.person}</h2>
+            <div className='divider m-0' />
+            <p className='italic text-lg'>{props.role}</p>
+            <p className='text-lg'>{props.phoneNumber}</p>
+            <p className='text-lg'>{props.email}</p>
+          </div>
+        </div>
+      </div>
     );
   }
   return (
@@ -63,50 +81,24 @@ function Page() {
             </p>
           </div>
         </div>
-        <div className='float-right overflow-hidden mx-1 m-1 items-center'>
-          <div className='card card-compact lg:w-56 w-96 h-[32.7rem] bg-base-300'>
-            <figure>
-              <LeaderImage person='siggi' alt='Siggi' />
-            </figure>
-            <div className='card-body'>
-              <h2 className='card-title justify-center'>Siggi</h2>
-              <div className='divider m-0' />
-              <p className='italic text-lg'>vedoucí oddílu</p>
-              <p className='text-lg'>+420 777 832 462</p>
-              <p className='text-lg'>vladaplasil@seznam.cz</p>
-            </div>
-          </div>
-        </div>
-        <div className='float-right overflow-hidden mx-1 m-1'>
-          <div className='card card-compact lg:w-56 w-96 bg-base-300'>
-            <figure>
-              <LeaderImage person='svaca' alt='Sváča' />
-            </figure>
-            <div className='card-body'>
-              <h2 className='card-title justify-center'>Sváča</h2>
-              <div className='divider m-0' />
-              <p className='italic text-lg'>
-                zástupce vůdce oddílu pro světlušky a vlčata
-              </p>
-              <p className='text-lg'>+420 728 086 709</p>
-              <p className='text-lg'>pettra@centrum.cz</p>
-            </div>
-          </div>
-        </div>
-        <div className='float-right overflow-hidden mx-1 m-1'>
-          <div className='card card-compact lg:w-56 w-96 bg-base-300'>
-            <figure>
-              <LeaderImage person='pepek' alt='Pepek' />
-            </figure>
-            <div className='card-body'>
-              <h2 className='card-title justify-center lg:px-0 px-5'>Pepek</h2>
-              <div className='divider m-0' />
-              <p className='italic text-lg'>zástupce vůdce oddílu pro vlčata</p>
-              <p className='text-lg'>+420 603 368 588</p>
-              <p className='text-lg'>pepa.d@centrum.cz</p>
-            </div>
-          </div>
-        </div>
+        <Leader
+          person='Siggi'
+          email='vladaplasil@seznam.cz'
+          phoneNumber='+420 777 832 462'
+          role='vedoucí oddílu'
+        />
+        <Leader
+          person='Sváča'
+          email='pettra@centrum.cz'
+          phoneNumber='+420 728 086 709'
+          role='zástupce vůdce oddílu pro světlušky a vlčata'
+        />
+        <Leader
+          person='Pepek'
+          email='pepa.d@centrum.cz'
+          phoneNumber='+420 603 368 588'
+          role='zástupce vůdce oddílu pro vlčata'
+        />
       </div>
     </>
   );

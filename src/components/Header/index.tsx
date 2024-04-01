@@ -34,9 +34,6 @@ function Header() {
               <li className='btn btn-ghost rounded-btn'>
                 <Link href='/odborky'>Odborky a vlčci</Link>
               </li>
-              <li className='btn btn-ghost rounded-btn'>
-                <Link href='/kontakt'>Kontakt</Link>
-              </li>
             </ul>
           </div>
         </div>

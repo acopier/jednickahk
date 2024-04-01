@@ -8,11 +8,17 @@ function Page() {
           {/* Družiny */}
           <thead>
             <tr>
-              <th>Vydry</th>
-              <th>Vlci</th>
-              <th>Ledňáčci</th>
-              <th>Veverky</th>
-              <th>Kamzíci</th>
+              <th className='bg-red-700 dark:text-white text-black'>Vydry</th>
+              <th className='bg-blue-700 dark:text-white text-black'>Vlci</th>
+              <th className='bg-green-700 dark:text-white text-black'>
+                Ledňáčci
+              </th>
+              <th className='bg-yellow-600 dark:text-white text-black'>
+                Veverky
+              </th>
+              <th className='bg-purple-700 dark:text-white text-black'>
+                Kamzíci
+              </th>
             </tr>
           </thead>
           <tbody>

@@ -35,7 +35,7 @@ function Hero() {
           <p className='font-themix rounded-lg font-bold text-lg bg-yellow-700'>
             Jsme skautský oddíl z Hradce Králové - Malšovic.
           </p>
-          <button className='btn btn-ghost bg-yellow-400 text-black m-11'>
+          <button className='btn bg-yellow-400 text-black m-11 btn-outline'>
             <Link href='#content'>Více Informací</Link>
           </button>
         </div>

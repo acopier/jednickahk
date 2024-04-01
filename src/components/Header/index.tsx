@@ -8,7 +8,12 @@ function Header() {
       <div className='navbar bg-base-300'>
         <div className='hover:opacity-75 hidden sm:flex'>
           <Link href='/'>
-            <ThemeImage alt='skaut' width={192} height={192} src='/skaut' />
+            <ThemeImage
+              alt='skaut'
+              width={192}
+              height={192}
+              src='/logo/skaut'
+            />
           </Link>
           Jednička HK
         </div>

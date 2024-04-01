@@ -17,7 +17,12 @@ function Footer() {
           target='_blank'
           rel='noopener noreferrer'
         >
-          <Image src='/instagram.svg' alt='Instagram' width={24} height={24} />
+          <Image
+            src='/logo/instagram.svg'
+            alt='Instagram'
+            width={24}
+            height={24}
+          />
         </Link>
         {/* Facebook */}
         <Link
@@ -25,7 +30,12 @@ function Footer() {
           target='_blank'
           rel='noopener noreferrer'
         >
-          <Image src='/facebook.svg' alt='Facebook' width={24} height={24} />
+          <Image
+            src='/logo/facebook.svg'
+            alt='Facebook'
+            width={24}
+            height={24}
+          />
         </Link>
       </nav>
     </footer>

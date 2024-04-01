@@ -19,7 +19,7 @@ function Hero() {
     alt: 'Tábor avatar',
     width: 1920,
     height: 0,
-    src: '/tabor-avatar.png',
+    src: '/tabor/avatar.png',
   });
   const backgroundImage = getBackgroundImage(srcSet);
   const style = { height: '100vh', backgroundImage };

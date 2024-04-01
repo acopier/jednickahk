@@ -1,6 +1,17 @@
 import Hero from '@/components/Hero';
 import Image from 'next/image';
 function Page() {
+  function LeaderImage(props: { person: string; alt: string }) {
+    return (
+      <Image
+        src={`/vedouci/${props.person}.jpg`}
+        alt={props.alt}
+        width={225}
+        height={300}
+        className='rounded-box'
+      />
+    );
+  }
   return (
     <>
       <Hero />
@@ -55,13 +66,7 @@ function Page() {
         <div className='float-right overflow-hidden mx-1 m-1 items-center'>
           <div className='card card-compact lg:w-56 w-96 h-[32.7rem] bg-base-300'>
             <figure>
-              <Image
-                src='/siggi.jpg'
-                alt='Siggi'
-                width={225}
-                height={300}
-                className='rounded-box'
-              />
+              <LeaderImage person='siggi' alt='Siggi' />
             </figure>
             <div className='card-body'>
               <h2 className='card-title justify-center'>Siggi</h2>
@@ -75,13 +80,7 @@ function Page() {
         <div className='float-right overflow-hidden mx-1 m-1'>
           <div className='card card-compact lg:w-56 w-96 bg-base-300'>
             <figure>
-              <Image
-                src='/svaca.jpg'
-                alt='Sváča'
-                width={225}
-                height={300}
-                className='rounded-box'
-              />
+              <LeaderImage person='svaca' alt='Sváča' />
             </figure>
             <div className='card-body'>
               <h2 className='card-title justify-center'>Sváča</h2>
@@ -97,13 +96,7 @@ function Page() {
         <div className='float-right overflow-hidden mx-1 m-1'>
           <div className='card card-compact lg:w-56 w-96 bg-base-300'>
             <figure>
-              <Image
-                src='/pepek.jpg'
-                alt='Pepek'
-                width={225}
-                height={300}
-                className='rounded-box'
-              />
+              <LeaderImage person='pepek' alt='Pepek' />
             </figure>
             <div className='card-body'>
               <h2 className='card-title justify-center lg:px-0 px-5'>Pepek</h2>

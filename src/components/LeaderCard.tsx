@@ -1,13 +1,13 @@
 import Image from 'next/image';
 
-function Leader(props: {
+function LeaderCard(props: {
   person: string;
   role: string;
   phoneNumber: string;
   email: string;
 }) {
   return (
-    <div className='float-right overflow-hidden m-1 items-center'>
+    <div className='float-right overflow-hidden m-1 items-center sm:w-screen lg:w-auto flex justify-center'>
       <div className='card card-compact lg:w-56 w-96 h-[32.7rem] bg-base-300'>
         <figure>
           <Image
@@ -31,4 +31,4 @@ function Leader(props: {
   );
 }
 
-export default Leader;
+export default LeaderCard;

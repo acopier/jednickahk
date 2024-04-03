@@ -1,29 +1,26 @@
 import Hero from '@/components/Hero';
-import Leader from '@/components/Leader';
+import LeaderCard from '@/components/LeaderCard';
 
 function Page() {
   return (
     <>
       <Hero />
       <div id='content'>
-        <div className='float-left overflow-hidden m-1'>
-          <div className='card card-compact bg-base-100'>
-            <div className='card-body'>
-              <p className='font-themix rounded-box font-bold text-lg bg-base-300 lg:w-[29rem] w-[22rem] p-3'>
-                V našem oddíle se schází kluci i holky z celého Hradce Králové a
-                okolí. Naší činnost tvoří družinové schůzky, které se konají
-                pravidelně každé úterý v naší klubovně. Také pořádáme řadu
-                dalších akcí. Několikrát do roka jezdíme na víkendové akce do
-                širokého okolí. O jarních prázdninách pořádáme zimní tábor a v
-                létě jezdíme na čtrnáctidenní letní tábor pod stany.
-                <br />
-                <br />
-                Pokud máš chuť zažít spoustu báječných dobrodružství, přijď se
-                podívat na naše schůzky. Najdeš nás v budově bývalé Dřevěnky
-                (naproti kinu Mladých) v Malšovicích v každé úterý od 16:30
-                hodin.
-              </p>
-            </div>
+        <div className='float-left overflow-hidden m-1 card card-compact bg-base-300'>
+          <div className='card-body'>
+            <p className='font-themix rounded-box font-bold text-lg bg-base-300 lg:w-[29rem] sm:w-screen p-3'>
+              V našem oddíle se schází kluci i holky z celého Hradce Králové a
+              okolí. Naší činnost tvoří družinové schůzky, které se konají
+              pravidelně každé úterý v naší klubovně. Také pořádáme řadu dalších
+              akcí. Několikrát do roka jezdíme na víkendové akce do širokého
+              okolí. O jarních prázdninách pořádáme zimní tábor a v létě jezdíme
+              na čtrnáctidenní letní tábor pod stany.
+              <br />
+              <br />
+              Pokud máš chuť zažít spoustu báječných dobrodružství, přijď se
+              podívat na naše schůzky. Najdeš nás v budově bývalé Dřevěnky
+              (naproti kinu Mladých) v Malšovicích v každé úterý od 16:30 hodin.
+            </p>
           </div>
         </div>
         <div className='card card-compact bg-base-300 float-left overflow-hidden m-1'>
@@ -35,7 +32,7 @@ function Page() {
               loading='lazy'
               referrerPolicy='no-referrer-when-downgrade'
               title='map'
-              className='lg:w-[40rem] w-96 h-[19.5rem]'
+              className='lg:w-[40rem] w-screen h-[19.5rem]'
             />
           </figure>
           <div className='card-body'>
@@ -53,19 +50,19 @@ function Page() {
             </p>
           </div>
         </div>
-        <Leader
+        <LeaderCard
           person='Siggi'
           email='vladaplasil@seznam.cz'
           phoneNumber='+420 777 832 462'
           role='vedoucí oddílu'
         />
-        <Leader
+        <LeaderCard
           person='Sváča'
           email='pettra@centrum.cz'
           phoneNumber='+420 728 086 709'
           role='zástupce vůdce oddílu pro světlušky a vlčata'
         />
-        <Leader
+        <LeaderCard
           person='Pepek'
           email='pepa.d@centrum.cz'
           phoneNumber='+420 603 368 588'

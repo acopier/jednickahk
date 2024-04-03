@@ -31,6 +31,8 @@ function ThemeSwitcher() {
       className='theme-controller'
       checked={theme === 'dark' ? true : false}
       onChange={toggleDarkMode}
+      title='Theme switcher'
+      id='theme-controller'
     />
   );
 }

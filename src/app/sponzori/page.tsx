@@ -1,9 +1,17 @@
 import ContentPage from '@/components/ContentPage';
 import Link from 'next/link';
 import Image from 'next/image';
+import { Metadata } from 'next';
+
+const title = 'Sponzoři';
+
+export const metadata: Metadata = {
+  title: title,
+};
+
 function Page() {
   return (
-    <ContentPage title='Sponzoři'>
+    <ContentPage title={title}>
       <Link
         href='https://pizzzza.cz/pobocka/hradec-kralove'
         className='link text-blue-400 flex justify-center mb-5'
@@ -16,7 +24,7 @@ function Page() {
       </p>
       {[0, 1, 2].map((i) => (
         <Image
-          src={`/pizza/${i}.jpg`}
+          src={`/sponzori/pizza/${i}.jpg`}
           alt='Dovážka pizzy'
           width={512}
           height={512}

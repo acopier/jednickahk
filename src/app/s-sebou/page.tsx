@@ -1,8 +1,15 @@
 import ContentPage from '@/components/ContentPage';
+import { Metadata } from 'next';
+
+const title = 'Co s sebou';
+
+export const metadata: Metadata = {
+  title: title,
+};
 
 function Page() {
   return (
-    <ContentPage title='Co s sebou'>
+    <ContentPage title={title}>
       <h2 className='text-center font-skaut text-3xl underline'>Na schůky</h2>
       <ol className='list-disc px-10 p-5'>
         <li>osobní sešit (zápisník)</li>

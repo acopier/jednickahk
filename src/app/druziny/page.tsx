@@ -1,8 +1,15 @@
 import ContentPage from '@/components/ContentPage';
+import { Metadata } from 'next';
+
+const title = 'Družiny';
+
+export const metadata: Metadata = {
+  title: title,
+};
 
 function Page() {
   return (
-    <ContentPage title='Družiny'>
+    <ContentPage title={title}>
       <div className='overflow-x-auto'>
         <table className='table'>
           {/* Družiny */}

@@ -1,9 +1,16 @@
 import ContentPage from '@/components/ContentPage';
+import { Metadata } from 'next';
 import Link from 'next/link';
+
+const title = 'Odborky a vlčci';
+
+export const metadata: Metadata = {
+  title: title,
+};
 
 function Page() {
   return (
-    <ContentPage title='Odborky a vlčci'>
+    <ContentPage title={title}>
       <p>
         Vlčci, světýlka a odborky jsou „zkoušky“, které si sami můžete vybrat a
         plnit je. Zaměřují se převážně na různé dovednosti, které by měl skaut

@@ -1,8 +1,15 @@
 import ContentPage from '@/components/ContentPage';
+import { Metadata } from 'next';
+
+const title = 'Historie';
+
+export const metadata: Metadata = {
+  title: title,
+};
 
 function Page() {
   return (
-    <ContentPage title='Historie'>
+    <ContentPage title={title}>
       <p>
         Historie 1.oddílu se začala psát podle posledních zpráv již v roce 1968
         ve skautském středisku v Kuklenách. Prvním z vůdců oddílu byl br.Blažek.

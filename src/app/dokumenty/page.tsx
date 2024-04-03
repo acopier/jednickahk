@@ -1,9 +1,16 @@
 import ContentPage from '@/components/ContentPage';
+import { Metadata } from 'next';
 import Link from 'next/link';
+
+const title = 'Důležité dokumenty';
+
+export const metadata: Metadata = {
+  title: title,
+};
 
 function Page() {
   return (
-    <ContentPage title='Důležité dokumenty'>
+    <ContentPage title={title}>
       Rádcovský deník
       <p>
         <br />

@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import HeaderDropdown from './Dropdown';
 import ThemeImage from '../ThemeImage';
+import ThemeSwitcher from '../ThemeSwitcher';
 
 function Header() {
   return (
@@ -16,6 +17,7 @@ function Header() {
             />
           </Link>
           Jednička HK
+          <ThemeSwitcher />
         </div>
         <div className='flex justify-end flex-1'>
           <div className='flex items-center'>

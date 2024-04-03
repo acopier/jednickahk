@@ -1,11 +1,14 @@
-import type { Metadata } from 'next';
 import './globals.css';
 import Header from '@/components/Header';
 import { theMix, skautBold } from '@/fonts';
 import Footer from '@/components/Footer';
+import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: '1. Oddíl Junáka Hradec Králové | Jednička',
+  title: {
+    template: '%s | Jednička HK',
+    default: 'Jednička HK',
+  },
   description: 'Jsme skautský oddíl z Hradce Králové - Malšovic.',
 };
 

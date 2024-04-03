@@ -3,13 +3,15 @@ import React, { useEffect, useState } from 'react';
 
 function ThemeSwitcher() {
   const [theme, setTheme] = useState(
-    localStorage.getItem('theme')
+    typeof window !== 'undefined'
       ? localStorage.getItem('theme')
-      : matchMedia('(prefers-color-scheme: dark)').matches === true
-        ? 'dark'
-        : 'light'
+        ? localStorage.getItem('theme')
+        : matchMedia('(prefers-color-scheme: dark)').matches === true
+          ? 'dark'
+          : 'light'
+      : null
   );
-
+  // @ts-expect-error
   const toggleDarkMode = (e) => {
     if (e.target.checked) setTheme('dark');
     else setTheme('light');

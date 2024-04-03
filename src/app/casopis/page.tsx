@@ -8,9 +8,19 @@ function Page() {
       kterém jsou všechny důležité informace? Nezoufejte. Každý si můžete
       stáhnout a poté i vytisknout.
       <h2 className='font-skaut text-4xl underline'>2023/24</h2>
-      <Magazine year={2024} month='listopad' uploadTime='01' />
-      <Magazine year={2024} month='prosinec' uploadTime='01' />
-      <Magazine year={2024} month='leden' uploadTime='01' />
+      <Magazine year={2023} month='listopad' />
+      <Magazine year={2023} month='prosinec' />
+      <Magazine year={2024} month='leden' />
+      <h2 className='font-skaut text-4xl underline'>2022/23</h2>
+      <Magazine year={2022} month='září' />
+      <Magazine year={2022} month='říjen' />
+      <Magazine year={2022} month='listopad' />
+      <Magazine year={2022} month='prosinec' />
+      <Magazine year={2023} month='leden' />
+      <Magazine year={2023} month='únor' />
+      <Magazine year={2023} month='březen' />
+      <Magazine year={2023} month='duben' />
+      <Magazine year={2023} month='květen' />
     </ContentPage>
   );
 }

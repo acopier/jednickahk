@@ -13,8 +13,7 @@ function ThemeSwitcher() {
   );
   // @ts-expect-error
   const toggleDarkMode = (e) => {
-    if (e.target.checked) setTheme('dark');
-    else setTheme('light');
+    e.target.checked ? setTheme('dark') : setTheme('light');
   };
 
   useEffect(() => {

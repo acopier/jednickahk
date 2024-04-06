@@ -35,6 +35,9 @@ function Header() {
               <li className='btn btn-ghost rounded-btn m-1'>
                 <Link href='/odborky'>Odborky a vlčci</Link>
               </li>
+              <li className='btn btn-ghost rounded-btn m-1'>
+                <Link href='/ucet'>Účet</Link>
+              </li>
               <label className='swap swap-rotate btn btn-ghost rounded-btn'>
                 <ThemeSwitcher />
                 {/* sun icon */}

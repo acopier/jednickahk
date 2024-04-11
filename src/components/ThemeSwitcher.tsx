@@ -1,5 +1,5 @@
 'use client';
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 
 function ThemeSwitcher() {
   const [theme, setTheme] = useState(
@@ -11,8 +11,7 @@ function ThemeSwitcher() {
           : 'light'
       : null
   );
-  // @ts-expect-error
-  const toggleDarkMode = (e) => {
+  const toggleDarkMode: React.ChangeEventHandler<HTMLInputElement> = (e) => {
     e.target.checked ? setTheme('dark') : setTheme('light');
   };
 

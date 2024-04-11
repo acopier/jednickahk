@@ -9,7 +9,3 @@
 .font-skaut {
   font-family: var(--font-skaut-bold);
 }
-
-* {
-  scroll-behavior: smooth;
-}

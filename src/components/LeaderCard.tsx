@@ -9,8 +9,8 @@ type Props = {
 
 function LeaderCard({ person, role, phoneNumber, email }: Props) {
   return (
-    <div className='float-right overflow-hidden m-1 items-center sm:w-screen lg:w-auto flex justify-center'>
-      <div className='card card-compact lg:w-56 w-96 h-[32.7rem] bg-base-300'>
+    <div className='flex overflow-hidden m-1 justify-center w-full rounded-box'>
+      <div className='card card-compact bg-base-300 w-full'>
         <figure>
           <Image
             // Converts query into basic lowercase ascii characters
@@ -25,6 +25,7 @@ function LeaderCard({ person, role, phoneNumber, email }: Props) {
           <h2 className='card-title justify-center'>{person}</h2>
           <div className='divider m-0' />
           <p className='italic text-lg'>{role}</p>
+          <div className='divider m-0' />
           <p className='text-lg'>{phoneNumber}</p>
           <p className='text-lg'>{email}</p>
         </div>

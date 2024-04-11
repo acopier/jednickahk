@@ -18,7 +18,10 @@ function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang='cs' className={`${theMix.variable} ${skautBold.variable}`}>
+    <html
+      lang='cs'
+      className={`${theMix.variable} ${skautBold.variable} scroll-smooth`}
+    >
       <body>
         <Header />
 

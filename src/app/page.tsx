@@ -6,7 +6,7 @@ function Page() {
   return (
     <>
       <Hero />
-      <div id='content' className='flex flex-col overflow-hidden'>
+      <div className='flex flex-col overflow-hidden md:w-2/3 w-screen m-auto'>
         <div className='overflow-hidden card card-compact bg-base-300 h-max m-1 w-full'>
           <div className='card-body'>
             <h1 className='font-themix font-bold text-4xl flex justify-center'>
@@ -77,9 +77,9 @@ function Page() {
       <div className='flex w-full justify-center'>
         <Link
           href='#hero'
-          className='w-max btn bg-yellow-400 text-black m-1 btn-outline'
+          className='btn bg-yellow-400 text-black m-11 btn-outline hover:animate-bounce rounded-box w-max p-2'
         >
-          Zpět
+          &#129093; &nbsp; Zpět
         </Link>
       </div>
     </>

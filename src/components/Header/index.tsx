@@ -16,8 +16,11 @@ function Header() {
               src='/logo/skaut'
             />
           </Link>
-          Jednička HK
         </div>
+        <Link href='/' className='sm:hidden hover:opacity-75'>
+          Domů
+        </Link>
+        <div className='divider divider-horizontal m-1' />
         <div className='flex justify-end flex-1'>
           <div className='flex items-center'>
             <div className='dropdown'>

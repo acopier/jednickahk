@@ -17,7 +17,7 @@ function Header() {
             />
           </Link>
         </div>
-        <Link href='/' className='sm:hidden m-1 btn'>
+        <Link href='/' className='sm:hidden m-1 btn btn-outline'>
           🏠
         </Link>
         <div className='flex justify-end flex-1'>
@@ -26,7 +26,7 @@ function Header() {
               <div
                 tabIndex={0}
                 role='button'
-                className='btn btn-ghost m-1 bg-base-200'
+                className='btn btn-ghost m-1 bg-base-200 btn-outline'
               >
                 Oddíl
               </div>
@@ -38,15 +38,15 @@ function Header() {
               </ul>
             </div>
             <ul className='flex justify-center'>
-              <li className='btn btn-ghost rounded-btn bg-base-200'>
-                <Link href='/odborky'>Odborky a vlčci</Link>
+              <li className='btn btn-ghost rounded-btn bg-base-200 btn-outline'>
+                <Link href='/odborky'>Odborky</Link>
               </li>
               {/* <li className='btn btn-ghost rounded-btn m-1'>
                 <Link href='/ucet'>Účet</Link>
               </li> */}
               {/* sun icon */}
             </ul>
-            <ul className='btn btn-ghost m-1 bg-base-200'>
+            <ul className='btn btn-ghost m-1 bg-base-200 btn-outline'>
               <ThemeSwitcher />
             </ul>
           </div>

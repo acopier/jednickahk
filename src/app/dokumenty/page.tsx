@@ -21,22 +21,13 @@ function Page() {
       </p>
       <br />
       <div className='font-skaut'>
-        <Link
-          href='https://jednickahk.skauting.cz/wp-content/uploads/2022/11/dochazka-2.pdf'
-          className='btn btn-outline mx-1'
-        >
+        <Link href='/dokumenty/dochazka.pdf' className='btn btn-outline m-1'>
           List s docházkou
         </Link>
-        <Link
-          href='https://jednickahk.skauting.cz/wp-content/uploads/2022/11/plan-2.pdf'
-          className='btn btn-outline mx-1'
-        >
+        <Link href='/dokumenty/plan.pdf' className='btn btn-outline m-1'>
           Plán schůzky
         </Link>
-        <Link
-          href='https://jednickahk.skauting.cz/wp-content/uploads/2022/11/poznamky-2.pdf'
-          className='btn btn-outline mx-1'
-        >
+        <Link href='/dokumenty/poznamky.pdf' className='btn btn-outline m-1'>
           Poznámky
         </Link>
       </div>

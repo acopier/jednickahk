@@ -26,9 +26,9 @@ function HeaderDropdown() {
       <li onClick={handleClick}>
         <Link href='/sponzori'>Sponzoři</Link>
       </li>
-      <li onClick={handleClick}>
+      {/* <li onClick={handleClick}>
         <Link href='/s-sebou'>Co s sebou</Link>
-      </li>
+      </li> */}
       <li onClick={handleClick}>
         <Link href='/dokumenty'>Dokumenty</Link>
       </li>

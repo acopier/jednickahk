@@ -76,7 +76,7 @@ function Page() {
       </div>
       <div className='flex w-full justify-center'>
         <Link
-          href='#hero'
+          href='#header'
           className='btn bg-yellow-400 text-black m-11 btn-outline hover:animate-bounce rounded-box w-max p-2'
         >
           &#129093; &nbsp; Zpět

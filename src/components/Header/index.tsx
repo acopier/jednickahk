@@ -5,7 +5,7 @@ import ThemeSwitcher from '../ThemeSwitcher/Full';
 
 function Header() {
   return (
-    <nav className='navbar font-skaut sticky top-0 z-50'>
+    <nav className='navbar font-skaut top-0 z-50'>
       <div className='navbar bg-base-300 rounded-box'>
         <div className='hover:opacity-75 hidden sm:flex'>
           <Link href='/'>

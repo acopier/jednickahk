@@ -22,12 +22,12 @@ function LeaderCard({ person, role, phoneNumber, email }: Props) {
           />
         </figure>
         <div className='card-body text-center'>
-          <h2 className='card-title justify-center'>{person}</h2>
+          <h2 className='card-title justify-center text-2xl'>{person}</h2>
           <div className='divider m-0' />
           <p className='italic text-lg'>{role}</p>
           <div className='divider m-0' />
-          <p className='text-lg'>{phoneNumber}</p>
-          <p className='text-lg'>{email}</p>
+          <p className='text-xl'>{phoneNumber}</p>
+          <p className='text-xl'>{email}</p>
         </div>
       </div>
     </div>

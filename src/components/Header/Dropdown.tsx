@@ -15,8 +15,11 @@ function HeaderDropdown() {
         <Link href='/druziny'>Družiny</Link>
       </li>
       <li onClick={handleClick}>
-        <Link href='/akce'>Akce</Link>
+        <Link href='/odborky'>Odborky a vlčci</Link>
       </li>
+      {/* <li onClick={handleClick}>
+        <Link href='/akce'>Akce</Link>
+      </li> */}
       <li onClick={handleClick}>
         <Link href='/casopis'>Jednička hlásí</Link>
       </li>

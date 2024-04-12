@@ -1,8 +1,8 @@
 import './globals.css';
-import Header from '@/components/Header/Base';
 import { theMix, skautBold } from '@/fonts';
 import Footer from '@/components/Footer';
 import { Metadata } from 'next';
+import Header from '@/components/Header';
 
 export const metadata: Metadata = {
   title: {

@@ -1,7 +1,7 @@
 'use client';
 import { useEffect, useState } from 'react';
 
-function ThemeSwitcher() {
+function ThemeSwitcherBase() {
   const [theme, setTheme] = useState(
     typeof window !== 'undefined'
       ? localStorage.getItem('theme')
@@ -35,4 +35,4 @@ function ThemeSwitcher() {
   );
 }
 
-export default ThemeSwitcher;
+export default ThemeSwitcherBase;

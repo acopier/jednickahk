@@ -13,7 +13,7 @@ function Page() {
               O nás
             </h1>
             <div className='divider divider-neutral' />
-            <p className='font-themix rounded-box text-lg'>
+            <p className='font-themix rounded-box text-xl'>
               V našem oddíle se schází kluci i holky z celého Hradce Králové a
               okolí. Naší činnost tvoří družinové schůzky, které se konají
               pravidelně každé úterý v naší klubovně. Také pořádáme řadu dalších
@@ -39,32 +39,32 @@ function Page() {
             />
           </figure>
           <div className='card-body'>
-            <h2 className='card-title font-bold justify-center'>
+            <h2 className='font-themix font-bold text-4xl flex justify-center'>
               Naše klubovna
             </h2>
             <div className='divider' />
-            <h3 className='text-center font-semibold text-lg'>
+            <h3 className='text-center text-xl'>
               Junák - český skaut, středisko Karla Šimka Hradec Králové - oddíl
               Jednička
             </h3>
             <br />
-            <p className='text-center font-bold'>
-              Čajkovského 1861/46a Hradec Králové 500 09
+            <p className='text-center text-xl'>
+              Čajkovského 1861/46a, 500 09 Hradec Králové
             </p>
           </div>
         </div>
-        <div className='flex h-full flex-col lg:flex-row'>
-          <LeaderCard
-            person='Siggi'
-            email='vladaplasil@seznam.cz'
-            phoneNumber='+420 777 832 462'
-            role='vedoucí oddílu'
-          />
+        <div className='flex h-full flex-col md:flex-row'>
           <LeaderCard
             person='Sváča'
             email='pettra@centrum.cz'
             phoneNumber='+420 728 086 709'
             role='zástupce vůdce oddílu pro světlušky a vlčata'
+          />
+          <LeaderCard
+            person='Siggi'
+            email='vladaplasil@seznam.cz'
+            phoneNumber='+420 777 832 462'
+            role='vedoucí oddílu'
           />
           <LeaderCard
             person='Pepek'

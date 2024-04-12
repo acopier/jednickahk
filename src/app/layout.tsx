@@ -1,5 +1,5 @@
 import './globals.css';
-import Header from '@/components/Header';
+import Header from '@/components/Header/Base';
 import { theMix, skautBold } from '@/fonts';
 import Footer from '@/components/Footer';
 import { Metadata } from 'next';

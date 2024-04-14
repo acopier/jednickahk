@@ -1,11 +1,16 @@
 import ContentPage from '@/components/ContentPage';
-import Magazine from '@/components/Magazine';
 import { Metadata } from 'next';
+import Link from 'next/link';
 
 const title = 'Jednička Hlásí';
 
 export const metadata: Metadata = {
   title: title,
+};
+
+type Props = {
+  year: number;
+  month: string;
 };
 
 function Page() {
@@ -22,22 +27,29 @@ function Page() {
     ],
     2024: ['leden'],
   };
+
   return (
     <ContentPage title={title}>
       Ušel vám, nebo jste někde zašantročili váš časopis Jednička hlásí, ve
       kterém jsou všechny důležité informace? Nezoufejte. Každý si můžete
       stáhnout a poté i vytisknout.
-      <h2 className='font-skaut text-4xl underline'>2024</h2>
-      {year[2024].map((month) => (
-        <Magazine year={2024} month={month} key={month} />
-      ))}
-      <h2 className='font-skaut text-4xl underline'>2023</h2>
-      {year[2023].map((month) => (
-        <Magazine year={2023} month={month} key={month} />
-      ))}
-      <h2 className='font-skaut text-4xl underline'>2022</h2>
-      {year[2022].map((month) => (
-        <Magazine year={2022} month={month} key={month} />
+      {Object.entries(year).map(([year, months]) => (
+        <div key={year} className='font-skaut'>
+          <h2 className='text-4xl underline'>{year}</h2>
+          {months.map((month) => (
+            <Link
+              className='btn btn-outline m-1'
+              href={`/casopis/${year}/${month.normalize('NFD').replace(/[^\w]/g, '')}.pdf`}
+              key={month}
+            >
+              {
+                (month[0].toUpperCase() + month.slice(1)) as Capitalize<
+                  typeof month
+                >
+              }
+            </Link>
+          ))}
+        </div>
       ))}
     </ContentPage>
   );

@@ -1,4 +1,4 @@
-import { getImageProps } from 'next/image';
+import Image, { getImageProps } from 'next/image';
 
 type Props = {
   src: string;
@@ -20,7 +20,7 @@ function ThemeImage({ src, alt, width, height }: Props) {
     <picture>
       <source media='(prefers-color-scheme: dark)' srcSet={dark} />
       <source media='(prefers-color-scheme: light)' srcSet={light} />
-      <img {...rest} alt={alt} />
+      <Image {...rest} alt={alt} />
     </picture>
   );
 }

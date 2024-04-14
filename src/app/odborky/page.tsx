@@ -20,10 +20,10 @@ function Page() {
       <p>(Před začátkem plnění odborky se ohlas Siggimu)</p>
       <br />
       <div className='font-skaut'>
-        <Link className='btn btn-outline mx-1' href='https://odborky.skaut.cz/'>
+        <Link className='btn btn-outline m-1' href='https://odborky.skaut.cz/'>
           Odborky
         </Link>
-        <Link className='btn btn-outline mx-1' href='https://vlcci.skaut.cz/'>
+        <Link className='btn btn-outline m-1' href='https://vlcci.skaut.cz/'>
           Vlčci a Světýlka
         </Link>
       </div>

@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
-import dynamic from 'next/dynamic';
+// import dynamic from 'next/dynamic';
 
-const Account = dynamic(() => import('@/components/Account'), { ssr: false });
+// const Account = dynamic(() => import('@/components/Account'));
 const title = 'Účet';
 
 export const metadata: Metadata = {
@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 };
 
 function Page() {
-  return <Account />;
+  // return <Account />;
 }
 
 export default Page;

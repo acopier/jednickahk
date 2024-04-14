@@ -1,11 +1,60 @@
-import Hero from '@/components/Hero';
-import LeaderCard from '@/components/LeaderCard';
+import Image, { getImageProps } from 'next/image';
 import Link from 'next/link';
-
 function Page() {
+  function getBackgroundImage(srcSet = '') {
+    const imageSet = srcSet
+      .split(', ')
+      .map((str) => {
+        const [url, dpi] = str.split(' ');
+        return `url("${url}") ${dpi}`;
+      })
+      .join(', ');
+    return `image-set(${imageSet})`;
+  }
+  const {
+    props: { srcSet },
+  } = getImageProps({
+    alt: 'Tábor avatar',
+    width: 1920,
+    height: 0,
+    src: '/tabor/avatar.png',
+  });
+  const backgroundImage = getBackgroundImage(srcSet);
+  const style = { height: '100vh', backgroundImage };
+  const leaders = {
+    Sváča: {
+      email: 'pettra@centrum.cz',
+      phoneNumber: '+420 728 086 709',
+      role: 'zástupce vůdce oddílu pro světlušky a vlčata',
+    },
+    Siggi: {
+      email: 'vladaplasil@seznam.cz',
+      phoneNumber: '+420 777 832 462',
+      role: 'vedoucí oddílu',
+    },
+    Pepek: {
+      email: 'pepa.d@centrum.cz',
+      phoneNumber: '+420 603 368 588',
+      role: 'zástupce vůdce oddílu pro vlčata',
+    },
+  };
   return (
     <>
-      <Hero />
+      {/* Header */}
+      <div className='hero min-h-screen' style={style}>
+        <div className='hero-overlay bg-opacity-50' />
+        <div className='hero-content text-center text-gray-300 flex flex-col lg:flex-row'>
+          <div className='max-w-md'>
+            <h1 className='mb-4 text-4xl font-bold font-skaut bg-blue-500 rounded-box p-1 text-center'>
+              1.Oddíl Junáka Hradec Králové
+            </h1>
+            <p className='font-themix rounded-lg font-bold text-lg bg-yellow-700'>
+              Jsme skautský oddíl z Hradce Králové - Malšovic.
+            </p>
+          </div>
+        </div>
+      </div>
+      {/* Page */}
       <div className='flex flex-col overflow-hidden md:w-2/3 w-screen m-auto'>
         <div className='overflow-hidden card card-compact bg-base-300 h-max m-1 w-full'>
           <div className='card-body'>
@@ -54,30 +103,38 @@ function Page() {
           </div>
         </div>
         <div className='flex h-full flex-col md:flex-row'>
-          <LeaderCard
-            person='Sváča'
-            email='pettra@centrum.cz'
-            phoneNumber='+420 728 086 709'
-            role='zástupce vůdce oddílu pro světlušky a vlčata'
-          />
-          <LeaderCard
-            person='Siggi'
-            email='vladaplasil@seznam.cz'
-            phoneNumber='+420 777 832 462'
-            role='vedoucí oddílu'
-          />
-          <LeaderCard
-            person='Pepek'
-            email='pepa.d@centrum.cz'
-            phoneNumber='+420 603 368 588'
-            role='zástupce vůdce oddílu pro vlčata'
-          />
+          {Object.entries(leaders).map(([name, details], index) => (
+            <div
+              className='flex overflow-hidden m-1 justify-center w-full rounded-box'
+              key={index}
+            >
+              <div className='card card-compact bg-base-300 w-full'>
+                <figure>
+                  <Image
+                    src={`/vedouci/${name.toLowerCase().normalize('NFD').replace(/[^\w]/g, '')}.jpg`}
+                    width={225}
+                    height={300}
+                    className='rounded-box'
+                    alt={name}
+                  />
+                </figure>
+                <div className='card-body text-center'>
+                  <h2 className='card-title justify-center text-2xl'>{name}</h2>
+                  <div className='divider m-0' />
+                  <p className='italic text-lg'>{details.role}</p>
+                  <div className='divider m-0' />
+                  <p className='text-xl'>{details.email}</p>
+                  <p className='text-xl'>{details.phoneNumber}</p>
+                </div>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
       <div className='flex w-full justify-center'>
         <Link
           href='#header'
-          className='btn bg-yellow-400 text-black m-11 btn-outline hover:animate-bounce rounded-box w-max p-2'
+          className='btn bg-yellow-400 text-black m-4 btn-outline hover:animate-bounce rounded-box w-max p-4'
         >
           &#129093; &nbsp; Zpět
         </Link>

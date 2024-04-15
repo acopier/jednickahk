@@ -1,5 +1,5 @@
 import Image, { getImageProps } from 'next/image';
-import Link from 'next/link';
+
 function Page() {
   function getBackgroundImage(srcSet = '') {
     const imageSet = srcSet

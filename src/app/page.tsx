@@ -1,16 +1,7 @@
+import getBackgroundImage from '@/lib/getBackgroundImage';
 import Image, { getImageProps } from 'next/image';
 
 function Page() {
-  function getBackgroundImage(srcSet = '') {
-    const imageSet = srcSet
-      .split(', ')
-      .map((str) => {
-        const [url, dpi] = str.split(' ');
-        return `url("${url}") ${dpi}`;
-      })
-      .join(', ');
-    return `image-set(${imageSet})`;
-  }
   const {
     props: { srcSet },
   } = getImageProps({
@@ -20,7 +11,6 @@ function Page() {
     src: '/tabor/avatar.png',
   });
   const backgroundImage = getBackgroundImage(srcSet);
-  const style = { height: '100vh', backgroundImage };
   const leaders = {
     Sváča: {
       email: 'pettra@centrum.cz',
@@ -41,7 +31,7 @@ function Page() {
   return (
     <>
       {/* Header */}
-      <div className='hero min-h-screen' style={style}>
+      <div className='hero min-h-screen' style={{ backgroundImage }}>
         <div className='hero-overlay bg-opacity-50' />
         <div className='hero-content text-center text-gray-300 flex flex-col lg:flex-row'>
           <div className='max-w-md'>

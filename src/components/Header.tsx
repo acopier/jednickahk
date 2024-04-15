@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 function Header() {
   return (
-    <div className='navbar top-0 sticky z-[1]'>
+    <nav className='navbar top-0 sticky z-[1]'>
       <div className='navbar bg-base-300 rounded-box border border-yellow-500'>
         <div className='navbar-start'>
           <div className='dropdown'>
@@ -125,7 +125,7 @@ function Header() {
           </ul>
         </div>
       </div>
-    </div>
+    </nav>
   );
 }
 

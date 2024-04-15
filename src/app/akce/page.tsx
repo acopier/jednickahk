@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import { notFound } from 'next/navigation';
 
 const title = 'Akce';
 
@@ -7,7 +8,7 @@ export const metadata: Metadata = {
 };
 
 function Page() {
-  return <></>;
+  return notFound();
 }
 
 export default Page;

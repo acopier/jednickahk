@@ -10,8 +10,12 @@ import { notFound } from 'next/navigation';
 // };
 
 function Page() {
-  // return <Account />;
-  return notFound();
+  return (
+    notFound(),
+    {
+      /* <Account /> */
+    }
+  );
 }
 
 export default Page;

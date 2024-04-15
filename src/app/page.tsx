@@ -131,14 +131,6 @@ function Page() {
           ))}
         </div>
       </div>
-      <div className='flex w-full justify-center'>
-        <Link
-          href='#header'
-          className='btn bg-yellow-400 text-black m-4 btn-outline hover:animate-bounce rounded-box w-max p-4'
-        >
-          &#129093; &nbsp; Zpět
-        </Link>
-      </div>
     </>
   );
 }

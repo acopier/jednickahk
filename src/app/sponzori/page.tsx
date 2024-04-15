@@ -15,7 +15,7 @@ function Page() {
       <div className='flex justify-center mb-5'>
         <Link
           href='https://pizzzza.cz/pobocka/hradec-kralove'
-          className='link-hover text-blue-400'
+          className='text-blue-400 btn btn-ghost link-hover text-2xl'
         >
           Pizzzza.cz
         </Link>
@@ -29,9 +29,9 @@ function Page() {
           <Image
             src={`/sponzori/pizza/${i}.jpg`}
             alt='Dovážka pizzy'
-            width={512}
-            height={512}
-            className='rounded-box md:w-1/2 m-5'
+            width={768}
+            height={768}
+            className='rounded-box md:w-1/2 m-1'
             key={i}
           />
         ))}

@@ -1,5 +1,5 @@
-import ThemeImage from '../Theme/Image';
-import ThemeSwitcher from '../Theme/Switcher';
+import ThemeImage from './Theme/Image';
+import ThemeSwitcher from './Theme/Switcher';
 import Link from 'next/link';
 
 function Header() {
@@ -52,7 +52,7 @@ function Header() {
     //     </div>
     //   </div>
     // </nav>
-    <div className='navbar bg-base-100 top-0 sticky z-[1] bg-transparent'>
+    <div className='navbar top-0 sticky z-[1]'>
       <div className='navbar bg-base-300 rounded-box border border-yellow-500'>
         <div className='navbar-start'>
           <div className='dropdown'>
@@ -81,25 +81,32 @@ function Header() {
             </div>
             <ul
               tabIndex={0}
-              className='menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-300 rounded-box w-max'
+              className='menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-300 rounded-box w-max font-skaut'
             >
+              <li className='m-auto'>
+                <Link href='/historie'>Historie</Link>
+              </li>
+              <li className='m-auto'>
+                <Link href='/druziny'>Družiny</Link>
+              </li>
+              <li className='m-auto'>
+                <Link href='/odborky'>Odborky a vlčci</Link>
+              </li>
               {/* <li>
-                <a>Item 1</a>
+              <Link href='/akce'>Akce</Link>
+            </li> */}
+              <li className='m-auto'>
+                <Link href='/casopis'>Jednička hlásí</Link>
               </li>
-              <li>
-                <a>Parent</a>
-                <ul className='p-2'>
-                  <li>
-                    <a>Submenu 1</a>
-                  </li>
-                  <li>
-                    <a>Submenu 2</a>
-                  </li>
-                </ul>
+              <li className='m-auto'>
+                <Link href='/sponzori'>Sponzoři</Link>
               </li>
-              <li>
-                <a>Item 3</a>
-              </li> */}
+              <li className='m-auto'>
+                <Link href='/potreby'>Co s sebou</Link>
+              </li>
+              <li className='m-auto'>
+                <Link href='/dokumenty'>Dokumenty</Link>
+              </li>
             </ul>
           </div>
           <Link href='/' className='hover:opacity-75'>
@@ -132,9 +139,9 @@ function Header() {
             <li>
               <Link href='/sponzori'>Sponzoři</Link>
             </li>
-            {/* <li>
+            <li>
               <Link href='/potreby'>Co s sebou</Link>
-            </li> */}
+            </li>
             <li>
               <Link href='/dokumenty'>Dokumenty</Link>
             </li>

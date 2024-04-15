@@ -6,13 +6,15 @@ type Props = {
 function ContentPage({ title, children, ...rest }: Props) {
   return (
     <>
-      <div className='divider divider-info' />
-      <h1 className='font-skaut flex justify-center text-5xl text-center'>
-        {title}
-      </h1>
-      <div className='divider divider-info' />
+      <div className='bg-base-100'>
+        <div className='divider divider-info' />
+        <h1 className='font-skaut flex justify-center text-5xl text-center'>
+          {title}
+        </h1>
+        <div className='divider divider-info' />
+      </div>
       <div
-        className='rounded-box font-themix m-4 p-4 text-2xl leading-10 bg-base-300 text-justify'
+        className='rounded-box font-themix text-2xl leading-10 bg-base-200 p-4'
         {...rest}
       >
         {children}

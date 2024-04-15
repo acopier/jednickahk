@@ -16,10 +16,6 @@ function NotFound() {
         </h1>
         <div className='divider' />
         <h2 className='text-xl font-themix'>Tato stránka nebyla nalezena.</h2>
-        <div className='divider' />
-        <Link className='link link-hover text-blue-400 text-xl btn' href='/'>
-          Zpět domů
-        </Link>
       </div>
     </div>
   );

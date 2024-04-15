@@ -11,7 +11,9 @@ export const metadata: Metadata = {
 function Page() {
   return (
     <ContentPage title={title}>
-      Rádcovský deník
+      <h2 className='font-skaut flex justify-center text-3xl'>
+        Rádcovský deník
+      </h2>
       <p>
         <br />
         Deník, který rádcům i podrádcům pomáhá s přípravou družinového programu

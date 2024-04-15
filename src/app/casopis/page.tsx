@@ -35,7 +35,7 @@ function Page() {
       stáhnout a poté i vytisknout.
       {Object.entries(year).map(([year, months]) => (
         <div key={year} className='font-skaut'>
-          <h2 className='text-4xl underline'>{year}</h2>
+          <h2 className='text-4xl underline m-1'>{year}</h2>
           {months.map((month) => (
             <Link
               className='btn btn-outline m-1'

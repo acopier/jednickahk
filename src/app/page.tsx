@@ -45,8 +45,8 @@ function Page() {
         </div>
       </div>
       {/* Page */}
-      <div className='flex flex-col overflow-hidden md:w-2/3 w-screen m-auto'>
-        <div className='overflow-hidden card card-compact bg-base-300 h-max m-1 w-full'>
+      <div className='flex flex-col overflow-hidden md:w-2/3 w-screen mx-auto'>
+        <div className='overflow-hidden card card-compact bg-base-300 h-max w-full my-4'>
           <div className='card-body'>
             <h1 className='font-themix font-bold text-4xl flex justify-center'>
               O nás
@@ -65,7 +65,7 @@ function Page() {
             </p>
           </div>
         </div>
-        <div className='card card-compact bg-base-300 m-1 h-max w-full'>
+        <div className='card card-compact bg-base-300 my-4 h-max w-full'>
           <figure>
             <iframe
               src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2554.1122951742045!2d15.855153077165346!3d50.19643187154469!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470dd4c03f6e4d25%3A0x78f9618d77f9a59b!2zxIxhamtvdnNrw6lobyAxODYxLzQ2YSwgNTAwIDA5IE5vdsO9IEhyYWRlYyBLcsOhbG92w6k!5e0!3m2!1scs!2scz!4v1711873400023!5m2!1scs!2scz'
@@ -95,7 +95,7 @@ function Page() {
         <div className='flex h-full flex-col md:flex-row'>
           {Object.entries(leaders).map(([name, details], index) => (
             <div
-              className='flex overflow-hidden m-1 justify-center w-full rounded-box'
+              className='flex overflow-hidden mx-1 my-4 justify-center w-full rounded-box'
               key={index}
             >
               <div className='card card-compact bg-base-300 w-full'>

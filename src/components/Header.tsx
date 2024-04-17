@@ -1,5 +1,5 @@
-import ThemeImage from './Theme/Image';
-import ThemeSwitcher from './Theme/Switcher';
+import Image from 'next/image';
+import ThemeSwitcher from './ThemeSwitcher';
 import Link from 'next/link';
 
 function Header() {
@@ -62,12 +62,7 @@ function Header() {
             </ul>
           </div>
           <Link href='/' className='hover:opacity-75'>
-            <ThemeImage
-              src='/logo/skaut'
-              alt='Skaut'
-              width={192}
-              height={192}
-            />
+            <Image src='/logo/skaut.png' alt='Skaut' width={192} height={192} />
           </Link>
         </div>
         {/* PC */}

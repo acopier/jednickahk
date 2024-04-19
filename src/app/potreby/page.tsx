@@ -51,15 +51,16 @@ function Page() {
           <h2 className='text-center font-skaut text-2xl m-2 bg-red-700 rounded-lg'>
             Co je třeba dát vedoucímu
           </h2>
+          <div className='divider' />
           <ul className='list-disc list-inside'>
             <li>Léky, pokud dítě nějaké bere</li>
             <li>Kartičku zdravotní pojišťovny</li>
             <li>Průkazku na slevu jízdného</li>
           </ul>
-          <div className='divider' />
           <h2 className='text-center font-skaut text-2xl m-2 bg-red-700 rounded-lg'>
             Co si s sebou rozhodně nebrat
           </h2>
+          <div className='divider' />
           <ul className='list-disc list-inside'>
             <li>Cenné věci</li>
             <li>

@@ -5,6 +5,7 @@ module.exports = {
     'next/core-web-vitals',
     'plugin:react/recommended',
     'plugin:react/jsx-runtime',
+    'prettier'
   ],
   rules: {
     'import/no-anonymous-default-export': 'off',

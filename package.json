@@ -3,47 +3,64 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbo",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint && prettier . --check",
-    "format": "prettier . --write",
-    "prepare": "husky"
-  },
-  "lint-staged": {
-    "*.{js,jsx,ts,tsx}": [
-      "eslint --fix",
-      "prettier --write"
-    ],
-    "*.{md,json}": [
-      "prettier -w"
-    ]
+    "lint": "eslint . && prettier . --check",
+    "fix": "remark . --frail --output --quiet && remark . --ext mdx --frail --output --quiet --use remark-mdx && prettier . --log-level warn --write && eslint . --fix",
+    "db:generate": "drizzle-kit generate:mysql",
+    "db:push": "drizzle-kit push:mysql",
+    "db:update": "drizzle-kit up:mysql",
+    "db:drop": "drizzle-kit drop",
+    "db:check": "drizzle-kit check:mysql",
+    "db:studio": "drizzle-kit studio",
+    "db:migrate": "tsx ./drizzle/migrate.ts"
   },
   "dependencies": {
-    "nanostores": "^0.10.3",
+    "@lucia-auth/adapter-drizzle": "^1.0.7",
+    "@mdx-js/loader": "^3.0.1",
+    "@mdx-js/react": "^3.0.1",
+    "@next/mdx": "^14.2.2",
+    "@node-rs/argon2": "^1.8.1",
+    "@node-rs/bcrypt": "^1.10.2",
+    "@types/mdx": "^2.0.13",
+    "dotenv": "^16.4.5",
+    "drizzle-orm": "^0.30.8",
+    "embla-carousel": "^8.0.2",
+    "embla-carousel-react": "^8.0.2",
+    "lucia": "^3.1.1",
+    "mysql2": "^3.9.6",
     "next": "^14.2.1",
-    "pocketbase": "^0.21.1",
+    "oslo": "^1.2.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "remark-cli": "^12.0.0",
+    "remark-gfm": "^4.0.0",
+    "remark-mdx": "^3.0.1",
     "sharp": "^0.33.3"
   },
   "type": "module",
   "devDependencies": {
     "@next/eslint-plugin-next": "^14.2.1",
-    "@types/node": "^20.11.30",
+    "@types/node": "^20.12.7",
     "@types/react": "^18.2.73",
     "@types/react-dom": "^18.2.23",
     "autoprefixer": "^10.4.19",
     "daisyui": "^4.9.0",
+    "drizzle-kit": "^0.20.17",
     "eslint": "8.57.0",
     "eslint-config-next": "^14.2.1",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-react": "^7.34.1",
-    "husky": "^9.0.11",
-    "lint-staged": "^15.2.2",
     "postcss": "^8.4.38",
     "prettier": "^3.2.5",
     "tailwindcss": "^3.4.3",
+    "tsx": "^4.7.2",
     "typescript": "^5.4.3"
+  },
+  "remarkConfig": {
+    "plugins": [
+      "remark-gfm"
+    ]
   }
 }

@@ -1,8 +1,8 @@
 import './globals.css';
-import { theMix, skautBold } from '@/fonts';
 import Footer from '@/components/Footer';
 import { Metadata } from 'next';
 import Header from '@/components/Header';
+import localFont from 'next/font/local';
 
 export const metadata: Metadata = {
   title: {
@@ -12,6 +12,17 @@ export const metadata: Metadata = {
   description: 'Jsme skautský oddíl z Hradce Králové - Malšovic.',
 };
 
+const theMixFont = localFont({
+  src: '../../public/font/themix-400.woff',
+  variable: '--font-themix',
+  display: 'swap',
+});
+const skautBoldFont = localFont({
+  src: '../../public/font/skaut-bold.woff2',
+  variable: '--font-skaut',
+  display: 'swap',
+});
+
 function RootLayout({
   children,
 }: Readonly<{
@@ -20,7 +31,7 @@ function RootLayout({
   return (
     <html
       lang='cs'
-      className={`${theMix.variable} ${skautBold.variable} scroll-smooth`}
+      className={`${theMixFont.variable} ${skautBoldFont.variable}`}
     >
       <body>
         <Header />

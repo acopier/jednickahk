@@ -1,4 +1,4 @@
-import getBackgroundImage from '@/lib/getBackgroundImage';
+import getBackgroundImage from '@/utils/getBackgroundImage';
 import Image, { getImageProps } from 'next/image';
 
 function Page() {
@@ -30,15 +30,15 @@ function Page() {
   };
   return (
     <>
-      {/* Header */}
+      {/* Hero */}
       <div className='hero min-h-screen' style={{ backgroundImage }}>
         <div className='hero-overlay bg-opacity-50' />
         <div className='hero-content text-center text-gray-300 flex flex-col lg:flex-row'>
           <div className='max-w-md'>
-            <h1 className='mb-4 text-4xl font-bold font-skaut bg-blue-500 rounded-box p-1 text-center'>
+            <h1 className='mb-4 text-4xl font-bold font-skaut bg-primary rounded-box p-1 text-center'>
               1.Oddíl Junáka Hradec Králové
             </h1>
-            <p className='font-themix rounded-lg font-bold text-lg bg-yellow-700'>
+            <p className='font-themix rounded-lg font-bold text-lg bg-secondary'>
               Jsme skautský oddíl z Hradce Králové - Malšovic.
             </p>
           </div>

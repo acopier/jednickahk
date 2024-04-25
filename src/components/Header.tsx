@@ -5,7 +5,7 @@ import Link from 'next/link';
 function Header() {
   return (
     <nav className='navbar top-0 sticky z-[1]'>
-      <div className='navbar bg-base-300 rounded-box border border-yellow-500'>
+      <div className='navbar bg-base-300 rounded-box border-primary border-2'>
         <div className='navbar-start'>
           <div className='dropdown'>
             {/* Mobile */}

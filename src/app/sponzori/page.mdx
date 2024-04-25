@@ -1,0 +1,35 @@
+import Link from 'next/link';
+
+export const metadata = {
+  title: 'Sponzoři',
+};
+
+export const sliderData = {
+  pizza: [0, 1, 2],
+};
+
+# {metadata.title}
+
+<div className="flex justify-center">
+  <Link href="https://pizzzza.cz/pobocka/hradec-kralove" className="text-blue-400 btn btn-ghost link-hover text-2xl" target="_blank" rel="noopener noreferrer">
+    Pizzzza.cz
+  </Link>
+</div>
+
+<div className="divider" />
+
+<div className="flex flex-row flex-wrap w-full justify-center p-1">
+  Mockrát Děkujeme Pizzzza.cz za sponzorský dar, který vykouzlil úsměv na tváři
+  nejednomu hladovému skautíkovi z našeho oddílu.
+
+  {sliderData.pizza.map((_, index) => (
+        <Image
+          src={`/sponzori/pizza/${index}.jpg`}
+          alt='Dovážka pizzy'
+          width={768}
+          height={768}
+          className='rounded-box m-1 object-cover'
+          key={index}
+      />
+      ))}
+</div>

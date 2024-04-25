@@ -1,0 +1,27 @@
+{
+  "version": "5",
+  "dialect": "mysql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "when": 1713703975311,
+      "tag": "0000_cool_katie_power",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "5",
+      "when": 1713712892076,
+      "tag": "0001_regular_shard",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "5",
+      "when": 1713713062736,
+      "tag": "0002_cultured_steve_rogers",
+      "breakpoints": true
+    }
+  ]
+}

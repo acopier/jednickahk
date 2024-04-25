@@ -4,7 +4,7 @@ import Image from 'next/image';
 function Footer() {
   return (
     <footer
-      className='footer items-center p-4 font-skaut text-neutral-content'
+      className='footer items-center p-3 font-skaut text-neutral-content'
       id='footer'
     >
       <aside className='items-center grid-flow-col'>

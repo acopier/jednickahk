@@ -1,20 +1,18 @@
-import { notFound } from 'next/navigation';
-// import { Metadata } from 'next';
+import { logout, validateRequest } from '@/server/auth';
+import { redirect } from 'next/navigation';
 
-// const Account = dynamic(() => import('@/components/Account'));
-
-// const title = 'Účet';
-
-// export const metadata: Metadata = {
-//   title: title,
-// };
-
-function Page() {
+async function Page() {
+  const { user } = await validateRequest();
   return (
-    notFound(),
-    {
-      /* <Account /> */
-    }
+    <>
+      {user === null ? (
+        redirect('/ucet/prihlasit')
+      ) : (
+        <form action={logout}>
+          <button type='submit'>Odhlásit se</button>
+        </form>
+      )}
+    </>
   );
 }
 

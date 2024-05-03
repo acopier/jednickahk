@@ -4,11 +4,14 @@ import remarkMdx from 'remark-mdx';
 
 /** @type {import('next').NextConfig} */
 const config = {
-  webpack: (config) => {
-    config.externals.push('@node-rs/argon2', '@node-rs/bcrypt');
-    return config;
-  },
   pageExtensions: ['js', 'jsx', 'ts', 'tsx', 'md', 'mdx'],
+  experimental: {
+    swcMinify: true,
+    serverComponentsExternalPackages: ['oslo'],
+  },
+  compiler: {
+    removeConsole: process.env.NODE_ENV === 'production',
+  },
 };
 
 const withMdx = createMDX({

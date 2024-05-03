@@ -21,20 +21,16 @@
     "@mdx-js/loader": "^3.0.1",
     "@mdx-js/react": "^3.0.1",
     "@next/mdx": "^14.2.3",
-    "@node-rs/argon2": "^1.8.3",
-    "@node-rs/bcrypt": "^1.10.4",
     "@types/mdx": "^2.0.13",
     "dotenv": "^16.4.5",
     "drizzle-orm": "^0.30.9",
-    "embla-carousel": "^8.0.2",
-    "embla-carousel-react": "^8.0.2",
     "lucia": "^3.2.0",
     "mysql2": "^3.9.7",
     "next": "^14.2.3",
     "oslo": "^1.2.0",
-    "react": "^18.3.0",
-    "react-dom": "^18.3.0",
-    "remark-cli": "^12.0.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "remark-cli": "^12.0.1",
     "remark-gfm": "^4.0.0",
     "remark-mdx": "^3.0.1",
     "sharp": "^0.33.3"
@@ -43,7 +39,7 @@
   "devDependencies": {
     "@next/eslint-plugin-next": "^14.2.3",
     "@types/node": "^20.12.7",
-    "@types/react": "^18.3.0",
+    "@types/react": "^18.3.1",
     "@types/react-dom": "^18.3.0",
     "autoprefixer": "^10.4.19",
     "daisyui": "^4.10.2",
@@ -53,15 +49,11 @@
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-react": "^7.34.1",
     "postcss": "^8.4.38",
+    "postcss-load-config": "^5.0.3",
     "prettier": "^3.2.5",
     "tailwindcss": "^3.4.3",
     "tsx": "^4.7.3",
     "typescript": "^5.4.5"
   },
-  "remarkConfig": {
-    "plugins": [
-      "remark-gfm",
-      "remark-mdx"
-    ]
-  }
+  "packageManager": "pnpm@9.0.6+sha256.0624e30eff866cdeb363b15061bdb7fd9425b17bc1bb42c22f5f4efdea21f6b3"
 }

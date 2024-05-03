@@ -1,4 +1,4 @@
-import getBackgroundImage from '@/utils/getBackgroundImage';
+import getImage from '@/utils/image';
 import Image, { getImageProps } from 'next/image';
 
 function Page() {
@@ -10,7 +10,7 @@ function Page() {
     height: 0,
     src: '/tabor/avatar.png',
   });
-  const backgroundImage = getBackgroundImage(srcSet);
+  const backgroundImage = getImage(srcSet);
   const leaders = {
     Sváča: {
       email: 'pettra@centrum.cz',

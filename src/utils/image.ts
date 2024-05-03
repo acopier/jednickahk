@@ -1,4 +1,4 @@
-function getBackgroundImage(srcSet = '') {
+function getImage(srcSet = '') {
   const imageSet = srcSet
     .split(', ')
     .map((str) => {
@@ -9,4 +9,4 @@ function getBackgroundImage(srcSet = '') {
   return `image-set(${imageSet})`;
 }
 
-export default getBackgroundImage;
+export default getImage;

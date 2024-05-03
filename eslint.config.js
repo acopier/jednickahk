@@ -3,6 +3,7 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 import reactPluginRecommended from 'eslint-plugin-react/configs/recommended.js';
 import reactPluginJsxRuntime from 'eslint-plugin-react/configs/jsx-runtime.js';
+import prettierConfig from 'eslint-config-prettier';
 
 // mimic CommonJS variables -- not needed if using CommonJS
 const __filename = fileURLToPath(import.meta.url);
@@ -12,19 +13,26 @@ const compat = new FlatCompat({
   baseDirectory: __dirname,
 });
 
-/** @type {import('eslint').Linter.FlatConfig} */
-export default [
+/** @type {import('eslint').Linter.FlatConfig[]} */
+const config = [
   // mimic ESLintRC-style extends
+  prettierConfig,
   ...compat.extends('next/core-web-vitals'),
   ...compat.config({
-    ignorePatterns: ['*.config.*js'],
+    ignorePatterns: [],
   }),
   {
     files: ['src/**/*.{js,jsx,mjs,cjs,ts,tsx}'],
+    languageOptions: {
+      parserOptions: {
+        ecmaFeatures: {
+          jsx: true,
+        },
+      },
+    },
     rules: {
       ...reactPluginRecommended.rules,
       ...reactPluginJsxRuntime.rules,
-      'import/no-anonymous-default-export': 'off',
       'react/jsx-curly-brace-presence': [
         1,
         { props: 'never', children: 'never', propElementValues: 'always' },
@@ -32,3 +40,5 @@ export default [
     },
   },
 ];
+
+export default config;

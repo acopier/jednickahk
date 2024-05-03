@@ -1,0 +1,6 @@
+{
+  "editor.formatOnSave": true,
+  "eslint.experimental.useFlatConfig": true,
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "css.lint.unknownAtRules": "ignore"
+}

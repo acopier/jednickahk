@@ -1,5 +1,5 @@
 import AuthPage from '@/components/AuthPage';
-import { signup } from '@/server/auth';
+import { signup } from '@/server/db/auth';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {

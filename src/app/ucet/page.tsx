@@ -1,4 +1,4 @@
-import { logout, validateRequest } from '@/server/auth';
+import { logout, validateRequest } from '@/server/db/auth';
 import { redirect } from 'next/navigation';
 
 async function Page() {

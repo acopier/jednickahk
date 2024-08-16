@@ -1,4 +1,4 @@
-import { validateRequest } from '@/server/db/auth';
+import { validateRequest } from '@/server/auth';
 import { redirect } from 'next/navigation';
 
 type Props = {

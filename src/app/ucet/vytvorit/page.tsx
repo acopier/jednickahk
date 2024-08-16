@@ -1,13 +1,7 @@
-import AuthPage from '@/components/AuthPage';
-import { signup } from '@/server/db/auth';
-import type { Metadata } from 'next';
-
-export const metadata: Metadata = {
-  title: 'Registrace',
-};
+import { notFound } from "next/navigation";
 
 async function Page() {
-  return <AuthPage action={signup} title='Vytvořit účet' />;
+  return notFound();
 }
 
 export default Page;
